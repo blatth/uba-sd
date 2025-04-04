@@ -5,6 +5,7 @@
 ## Recursos
 
 - [LogisimEvolution](https://github.com/logisim-evolution/logisim-evolution)
+- [Computer Organization and Architecture - Linda Null & Julia Lobur](https://junyours.wordpress.com/wp-content/uploads/2012/07/computer-organization-and-architecture.pdf)
 
 ## Teóricos
 
