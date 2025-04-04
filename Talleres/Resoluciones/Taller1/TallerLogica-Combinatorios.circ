@@ -481,31 +481,43 @@
     <a name="circuit" val="inversor_4"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(130,180)" name="Pin">
+    <comp lib="0" loc="(130,100)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="A"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(360,270)" name="Pin">
+    <comp lib="0" loc="(610,170)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="INV"/>
     </comp>
-    <comp lib="0" loc="(570,180)" name="Pin">
+    <comp lib="0" loc="(830,190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="S"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="5" loc="(510,150)" name="Hex Digit Display"/>
-    <wire from="(130,180)" to="(170,180)"/>
-    <wire from="(170,140)" to="(170,180)"/>
-    <wire from="(170,140)" to="(180,140)"/>
-    <wire from="(400,140)" to="(400,180)"/>
-    <wire from="(400,180)" to="(510,180)"/>
-    <wire from="(510,150)" to="(510,180)"/>
-    <wire from="(510,180)" to="(570,180)"/>
+    <comp lib="1" loc="(210,120)" name="NOT Gate">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="2" loc="(630,110)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="5" loc="(770,160)" name="Hex Digit Display"/>
+    <comp loc="(480,120)" name="incrementador_4"/>
+    <wire from="(130,100)" to="(130,120)"/>
+    <wire from="(130,100)" to="(600,100)"/>
+    <wire from="(130,120)" to="(180,120)"/>
+    <wire from="(210,120)" to="(260,120)"/>
+    <wire from="(480,120)" to="(600,120)"/>
+    <wire from="(600,100)" to="(600,110)"/>
+    <wire from="(610,130)" to="(610,170)"/>
+    <wire from="(630,110)" to="(730,110)"/>
+    <wire from="(730,110)" to="(730,190)"/>
+    <wire from="(730,190)" to="(770,190)"/>
+    <wire from="(770,160)" to="(770,190)"/>
+    <wire from="(770,190)" to="(830,190)"/>
   </circuit>
   <circuit name="ALU">
     <a name="appearance" val="logisim_evolution"/>
