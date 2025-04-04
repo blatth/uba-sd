@@ -1,4 +1,4 @@
-# Algoritmos y Estructuras de Datos II
+# Sistemas Digitales
 
 ## 1er Cuatrimestre - 2025
 
