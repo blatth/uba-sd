@@ -13,5 +13,5 @@
 
 | N° |                  Enunciado                       | Resolución  |
 |----|--------------------------------------------------|-------------|
-| 1  | [Lógica digital](https://github.com/blatth/uba-sd/blob/master/Laboratorios/Talleres/Enunciados/TallerE1.pdf) | [✎](https://github.com/blatth/uba-sd/blob/master/Laboratorios/Talleres/Resoluciones/Taller1)
+| 1  | [Lógica digital](https://github.com/blatth/uba-sd/blob/master/Talleres/Enunciados/TallerE1.pdf) | [✎](https://github.com/blatth/uba-sd/blob/master/Talleres/Resoluciones/Taller1)
 
