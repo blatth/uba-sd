@@ -2,6 +2,10 @@
 
 ## 1er Cuatrimestre - 2025
 
+## Recursos
+
+- [LogisimEvolution](https://github.com/logisim-evolution/logisim-evolution)
+
 ## Teóricos
 
 | N° | Tema                                                                                          | Guía |
