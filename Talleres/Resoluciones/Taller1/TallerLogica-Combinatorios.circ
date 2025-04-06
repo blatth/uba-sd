@@ -536,28 +536,28 @@
       <a name="label" val="OP"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(1100,100)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="V"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1100,130)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="C"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1100,40)" name="Pin">
+    <comp lib="0" loc="(1150,160)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="N"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1100,70)" name="Pin">
+    <comp lib="0" loc="(1150,190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Z"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1150,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="V"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1260,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="C"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(140,160)" name="Pin">
@@ -572,6 +572,7 @@
     </comp>
     <comp lib="0" loc="(200,290)" name="Constant"/>
     <comp lib="0" loc="(500,290)" name="Constant"/>
+    <comp lib="1" loc="(1170,250)" name="NOT Gate"/>
     <comp lib="2" loc="(910,280)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="width" val="4"/>
@@ -579,12 +580,14 @@
     <comp lib="5" loc="(960,130)" name="Hex Digit Display"/>
     <comp loc="(410,160)" name="sumador_4"/>
     <comp loc="(440,270)" name="inversor_4"/>
-    <comp loc="(740,270)" name="sumador_4"/>
+    <comp loc="(740,270)" name="sumador_flags"/>
     <wire from="(1020,260)" to="(1070,260)"/>
-    <wire from="(1080,100)" to="(1100,100)"/>
-    <wire from="(1080,130)" to="(1100,130)"/>
-    <wire from="(1080,40)" to="(1100,40)"/>
-    <wire from="(1080,70)" to="(1100,70)"/>
+    <wire from="(1110,230)" to="(1110,250)"/>
+    <wire from="(1110,250)" to="(1140,250)"/>
+    <wire from="(1130,160)" to="(1150,160)"/>
+    <wire from="(1130,190)" to="(1150,190)"/>
+    <wire from="(1130,220)" to="(1150,220)"/>
+    <wire from="(1170,250)" to="(1260,250)"/>
     <wire from="(140,140)" to="(140,160)"/>
     <wire from="(140,140)" to="(490,140)"/>
     <wire from="(140,160)" to="(190,160)"/>
@@ -602,7 +605,11 @@
     <wire from="(490,140)" to="(490,270)"/>
     <wire from="(490,270)" to="(520,270)"/>
     <wire from="(500,290)" to="(520,290)"/>
-    <wire from="(740,270)" to="(870,270)"/>
+    <wire from="(740,230)" to="(1110,230)"/>
+    <wire from="(740,230)" to="(740,270)"/>
+    <wire from="(740,310)" to="(760,310)"/>
+    <wire from="(760,270)" to="(760,310)"/>
+    <wire from="(760,270)" to="(870,270)"/>
     <wire from="(850,160)" to="(850,260)"/>
     <wire from="(850,260)" to="(870,260)"/>
     <wire from="(890,300)" to="(890,310)"/>
