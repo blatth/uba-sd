@@ -819,35 +819,35 @@
     <a name="circuit" val="verificador"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1270,300)" name="Pin">
+    <comp lib="0" loc="(1280,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="res"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(1280,220)" name="Pin">
+    <comp lib="0" loc="(1300,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="C"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1300,240)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="N"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1280,240)" name="Pin">
+    <comp lib="0" loc="(1300,280)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Z"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1280,260)" name="Pin">
+    <comp lib="0" loc="(1300,300)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="V"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1280,280)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="C"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(540,220)" name="Clock"/>
@@ -894,11 +894,11 @@
       <a name="width" val="10"/>
     </comp>
     <comp loc="(1170,220)" name="ALU"/>
-    <wire from="(1170,220)" to="(1280,220)"/>
-    <wire from="(1170,240)" to="(1280,240)"/>
+    <wire from="(1170,220)" to="(1300,220)"/>
+    <wire from="(1170,240)" to="(1300,240)"/>
     <wire from="(1170,260)" to="(1280,260)"/>
-    <wire from="(1170,280)" to="(1280,280)"/>
-    <wire from="(1170,300)" to="(1270,300)"/>
+    <wire from="(1170,280)" to="(1300,280)"/>
+    <wire from="(1170,300)" to="(1300,300)"/>
     <wire from="(540,220)" to="(600,220)"/>
     <wire from="(790,190)" to="(960,190)"/>
     <wire from="(790,250)" to="(850,250)"/>
