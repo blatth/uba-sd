@@ -569,17 +569,13 @@
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(1110,160)" name="Splitter">
-      <a name="bit0" val="3"/>
-      <a name="bit1" val="2"/>
-      <a name="bit2" val="1"/>
-      <a name="bit3" val="0"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(1170,340)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1220,120)" name="Pin">
+    <comp lib="0" loc="(1230,150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="N"/>
@@ -678,7 +674,7 @@
     <wire from="(1110,320)" to="(1200,320)"/>
     <wire from="(1120,310)" to="(1120,380)"/>
     <wire from="(1120,380)" to="(1220,380)"/>
-    <wire from="(1130,120)" to="(1220,120)"/>
+    <wire from="(1130,150)" to="(1230,150)"/>
     <wire from="(1170,330)" to="(1170,340)"/>
     <wire from="(1170,330)" to="(1200,330)"/>
     <wire from="(1170,340)" to="(1200,340)"/>
