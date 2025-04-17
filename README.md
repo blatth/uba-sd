@@ -18,5 +18,5 @@
 
 | N° |                  Enunciado                       | Resolución  |
 |----|--------------------------------------------------|-------------|
-| 1  | [Lógica digital](https://github.com/blatth/uba-sd/blob/master/Talleres/Enunciados/TallerE1.pdf) | [✎](https://github.com/blatth/uba-sd/blob/master/Talleres/Resoluciones/Taller1)
-
+| 1  | [Lógica digital - Combinatorios](https://github.com/blatth/uba-sd/blob/master/Talleres/Enunciados/TallerE1.pdf) | [✎](https://github.com/blatth/uba-sd/blob/master/Talleres/Resoluciones/Taller1)
+| 1  | [Lógica digital - Secuenciales](https://github.com/blatth/uba-sd/blob/master/Talleres/Enunciados/TallerE2.pdf) | [✎](https://github.com/blatth/uba-sd/blob/master/Talleres/Resoluciones/Taller2)
