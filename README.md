@@ -22,5 +22,5 @@
 |----|--------------------------------------------------|-------------|----------|
 | 1  | [Lógica digital - Combinatorios](https://github.com/blatth/uba-sd/tree/main/Talleres/Enunciados/TallerE1.pdf) | [🖊️](https://github.com/blatth/uba-sd/tree/main/Talleres/Resoluciones/Taller1) | [📂](https://github.com/blatth/uba-sd/tree/main/Talleres/Recursos/Taller12)
 | 2  | [Lógica digital - Secuenciales](https://github.com/blatth/uba-sd/tree/main/Talleres/Enunciados/TallerE2.pdf) | [🖊️](https://github.com/blatth/uba-sd/tree/main/Talleres/Resoluciones/Taller2) | [📂](https://github.com/blatth/uba-sd/tree/main/Talleres/Recursos/Taller12)
-| 3  | [Arquitectura - A](https://github.com/blatth/uba-sd/tree/main/Talleres/Enunciados/TallerE3.pdf) | [🖊️](https://github.com/blatth/uba-sd/tree/main/Talleres/Resoluciones/Taller3) | [📂](https://github.com/blatth/uba-sd/tree/main/Talleres/Recursos/Taller3)
+| 3  | [Arquitectura - A](https://github.com/blatth/uba-sd/tree/main/Talleres/Enunciados/TallerE3.pdf) | [🖊️](https://github.com/blatth/uba-sd/tree/main/Talleres/Resoluciones/Taller3/Resolucion.pdf) | [📂](https://github.com/blatth/uba-sd/tree/main/Talleres/Recursos/Taller3)
 
