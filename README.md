@@ -15,6 +15,8 @@
 | 1   | [Representación de la Información](https://github.com/blatth/uba-sd/tree/main/Teoricas/Teorica1.pdf) | [📎](https://github.com/blatth/uba-sd/tree/main/Gu%C3%ADas/Guia1.pdf)
 | 2   | [Circuitos combinatorios](https://github.com/blatth/uba-sd/tree/main/Teoricas/Teorica2.pdf) y [secuenciales](https://github.com/blatth/uba-sd/tree/main/Teoricas/Teorica2b.pdf) | [📎](https://github.com/blatth/uba-sd/tree/main/Gu%C3%ADas/Guia2.pdf)
 | 3   | [Arquitectura 1](https://github.com/blatth/uba-sd/tree/main/Teoricas/Teorica3.pdf) | [📎](https://github.com/blatth/uba-sd/tree/main/Gu%C3%ADas/Guia3.pdf)
+| 4   | [Arquitectura 2](https://github.com/blatth/uba-sd/tree/main/Teoricas/Teorica4.pdf) | [📎](https://github.com/blatth/uba-sd/tree/main/Gu%C3%ADas/Guia3.pdf)
+
 
 ## Talleres
 
