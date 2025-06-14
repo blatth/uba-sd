@@ -5,7 +5,7 @@ De esta forma siento que tengo un mayor control sobre cómo debería comportarse
 de acuerdo al orden de llamada.
 Siempre las versiones recursivas de las funciones son más extensas. No sé si son las ideales o
 si *siempre* es mejor trabajar con funciones más directas (verificar esto último).
-Rec: por convensión siempre se reservan (y luego se restauran) 16 bytes en el stack. Esto es en la
+Rec: por convención siempre se reservan (y luego se restauran) 16 bytes en el stack. Esto es en la
 materia, hay otras resoluciones donde la convesión es diferente. Recordar, siempre, hacer addi/sw 
 al comenzar y lw/addi al finalizar. 
 */
@@ -16,7 +16,7 @@ al comenzar y lw/addi al finalizar.
 
 # es_primo(k) -> va a recibir k en a0
 es_primo:
-    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convensión
+    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convención
     sw ra, 12(sp)               # se guarda el valor de ra en el stack por si se necesita llamarlo
     sw a0, 8(sp)                # se guarda el valor de k por si necesito usarlo después
 
@@ -39,7 +39,7 @@ es_primo_end:
 
 # cantidad_divisores(k) - versión no-recursiva -> va a recibir k en a0
 cantidad_divisores:
-    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convensión
+    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convención
     sw ra, 12(sp)               # se guarda el valor de ra en el stack por si se necesita llamarlo
     sw a0, 8(sp)                # se guarda el valor de k por si necesito usarlo después
 
@@ -61,7 +61,7 @@ cantidad_divisores_end:
 
 # cantidad_divisores_rec(k, n) - versión recursiva -> va a recibir k en a0 y n en a1
 cantidad_divisores_rec:
-    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convensión
+    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convención
     sw ra, 12(sp)               # se guarda el valor de ra en el stack por si se necesita llamarlo
     sw a0, 8(sp)                # se guarda el valor de k por si necesito usarlo después
     sw a1, 4(sp)                # se guarda el valor de n por si necesito usarlo después
@@ -110,7 +110,7 @@ es_par:
 # arreglo_par(array, largo) -> va a recibir las direcciones del array en a0 y largo en a1
 
 arreglo_par:
-    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convensión
+    addi sp, sp, -16            # se reservan 16 bytes en el stack, por convención
     sw ra, 12(sp)               # se guarda el valor de ra en el stack por si se necesita llamarlo
     sw s0, 8(sp)                # guardo s0, sería el puntero del array
     sw s1, 4(sp)                # guardo s1, sería el largo
