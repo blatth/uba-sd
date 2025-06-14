@@ -13,6 +13,15 @@ al comenzar y lw/addi al finalizar.
 
 # --- Ejercicio 1
 
+/*
+
+Ej de prueba:
+
+main:
+    li a0, X         # cargo k = X 
+    jal es_par       # llamo a es_primo(k)
+
+*/
 
 # es_primo(k) -> va a recibir k en a0
 es_primo:
@@ -100,11 +109,35 @@ cdRec_end:
 
 # --- Ejercicio 2
 
+/*
+
+Ej de prueba:
+
+.data
+arr:    .word 3, 4, 5, 6, 7, 8   # arreglo
+n:      .word 6                  # largo del arreglo
+
+.text
+.globl main
+
+main:
+    la a0, arr         # a0 = dirección base del arreglo - la = load address - pseudoinst que carga la dirección de una etiqueta de .data
+    lw a1, n           # a1 = largo del arreglo
+    jal ra, arreglo_par  # Llamamos a la función que modifica el arreglo
+
+
+end:
+    j end
+
+
+*/
+
 
 # es_par(x) -> va a recibir x en a0
 es_par:
-    rem a0, a0, 2               # asigno a0 := a0 % 2
-    reqz a0, a0                 # asigno a0 := 1 si a0 es par (si su resto dio 0), sino asigno a0 := 0
+    li t3, 2                    # asigno t3 := 2
+    rem a0, a0, t3               # asigno a0 := a0 % t3 (2)
+    seqz a0, a0                 # asigno a0 := 1 si a0 es par (si su resto dio 0), sino asigno a0 := 0
     ret
 
 # arreglo_par(array, largo) -> va a recibir las direcciones del array en a0 y largo en a1
@@ -113,27 +146,29 @@ arreglo_par:
     addi sp, sp, -16            # se reservan 16 bytes en el stack, por convención
     sw ra, 12(sp)               # se guarda el valor de ra en el stack por si se necesita llamarlo
     sw s0, 8(sp)                # guardo s0, sería el puntero del array
-    sw s1, 4(sp)                # guardo s1, sería el largo
+    sw s1, 4(sp)                # guardo s1, sería el índice i
+    sw s2, 0(sp)                # guardo s2, sería el largo
 
     mv s0, a0                   # asigno s0 := a0 := puntero del array
-    mv s1, a1                   # asigno s1 := a1 := largo
-    li t0, 0                    # t0 := i := 0 lo uso como índice para iterar
+    mv s2, a1                   # asigno s2 := a1 := largo
+    li s1, 0                    # s1 := i := 0 lo uso como índice para iterar
 
 bucle:
-    bge t0, s1, bucle_end       # si t0 (i) >= s1 (largo) => termina el bucle
+    bge s1, s2, bucle_end       # si s1 (i) >= s2 (largo) => termina el bucle
 
-    slli t1, t0, 2              # t1 := t0 (i) * 4 porque cada int ocupa 4 bytes, calculo el offset para acceder a arr[i]
-    add t2, s0, t1              # t2 := s0 (puntero del array) + t1 (offset) := dirección de memoria de arr[i]
-    lw a0, 0(t2)                # a0 := t2, cargo en a0 el valor que está en t2 (o sea, la dirección de memoria de arr[i]) para usar después a0 en es_par
-    jal es_par                  # llamo a es_par con a0 := t2, me va a devolver 0 (si no es par) ó 1 (si es par)
-    sw a0, 0(t2)                # t2 := a0, porque es_par guarda en a0 el 0 ó 1 según sea par.
+    slli t0, s1, 2              # t1 := t0 (i) * 4 porque cada int ocupa 4 bytes, calculo el offset para acceder a arr[i]
+    add t1, s0, t0              # t1 := s0 := &arr[i] (puntero del array) + t0 (offset) := dirección de memoria de arr[i]
+    lw a0, 0(t1)                # a0 := t1 := arr[i], cargo en a0 el valor que está en t1 (o sea, la dirección de memoria de arr[i]) para usar después a0 en es_par
+    jal es_par                  # llamo a es_par con a0 := t1 := arr[i] => a0 := es_par(arr[i]), me va a devolver 0 (si no es par) ó 1 (si es par)
+    sw a0, 0(t1)                # t1 := a0, porque es_par guarda en a0 el 0 ó 1 según sea par.
 
-    addi t0, t0, 1              # t0 := t0 + 1 := i++, aumento en 1 el i
+    addi s1, s1, 1              # t0 := t0 + 1 := i++, aumento en 1 el i
     j bucle
 
 bucle_end:
-    lw s0, 8(sp)
-    lw s1, 4(sp)
-    lw ra, 12(sp)
-    addi sp, sp, 16
+    lw ra, 12(sp)          
+    lw s0, 8(sp)           
+    lw s1, 4(sp)           
+    lw s2, 0(sp)           
+    addi sp, sp, 16        
     ret
